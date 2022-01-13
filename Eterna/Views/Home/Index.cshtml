@@ -1,0 +1,71 @@
+﻿@model HomeViewModel
+<main>
+    <section class="first">
+        <div class="container">
+            <div class="row">
+                <div class="row1 col-lg-12">
+                    <span class="home">Home </span> <span> / Services</span>
+                    <h2>Services</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="second">
+        <div class="container">
+            <div class="row">
+                @foreach (var item in Model.Services)
+                {
+                    <div class="col-lg-4 col-md-6 col-sm-12 d-flex">
+                        <div class="box">
+                            <div class="icon"><i class="@item.Icon"></i></div>
+                            <h4><a href="#">@item.Title</a></h4>
+                            <p>@item.Desc</p>
+                        </div>
+                    </div>
+
+                }
+            </div>
+        </div>
+    </section>
+    <section class="three">
+        <div class="container">
+            <div class="title">
+                <h2>OUR SKILLS</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis saepe, neque porro natus facilis dicta tenetur excepturi temporibus ratione maxime!</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="image">
+                    <img src="https://bootstrapmade.com/demo/templates/Eterna/assets/img/skills-img.jpg" class="img-fluid" alt="">
+                </div>
+            </div>
+            <div class="col-lg-6 p-0">
+                <div class="title">
+                    <h2>Voluptatem dignissimos provident quasi corporis voluptates</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores magni quod voluptate ipsa dignissimos, soluta quisquam vel optio fugiat inventore.</p>
+                </div>
+                <h4>Html</h4>
+                <div class="progress">
+
+                    <div class="progress-bar redProgress" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">100%</div>
+                </div>
+                <br>
+                <h4>Css</h4>
+                <div class="progress">
+                    <div class="progress-bar redProgress" role="progressbar" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">90%</div>
+                </div>
+                <br>
+                <h4>JavaScript</h4>
+                <div class="progress">
+                    <div class="progress-bar redProgress" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">75%</div>
+                </div>
+                <br>
+                <h4>PhotoShop</h4>
+                <div class="progress">
+                    <div class="progress-bar redProgress" role="progressbar" style="width: 55%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">55%</div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
